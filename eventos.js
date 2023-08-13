@@ -6,5 +6,11 @@ function saludoDiv(){
 
 boton.addEventListener("click", saludoDiv);
 
+const miBoton = document.getElementById("miBoton");
 
+function saludoBoton(event){
+    event.stopPropagation();
+    alert("Hola!");
+}
 
+miBoton.addEventListener("click", saludoBoton);
